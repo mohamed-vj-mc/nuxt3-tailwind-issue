@@ -1,0 +1,36 @@
+{
+  "name": "acme-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "bff-mocks/*",
+    "federated-modules/*",
+    "packages/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "mock": "turbo run mock",
+    "sort-package-json": "sort-package-json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@acme/eslint-config-custom": "*",
+    "eslint": "^8.33.0",
+    "kill-port": "^2.0.1",
+    "prettier": "latest",
+    "sort-package-json": "^2.4.1",
+    "turbo": "latest",
+    "typescript": "^4.9.5"
+  },
+  "packageManager": "pnpm@7.25.0",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": "please-use-pnpm",
+    "pnpm": ">=7.25.0",
+    "yarn": "please-use-pnpm"
+  }
+}

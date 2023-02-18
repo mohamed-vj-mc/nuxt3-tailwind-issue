@@ -1,0 +1,32 @@
+{
+  "name": "@acme/nuxt-app",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Nuxt App",
+  "scripts": {
+    "build:portal": "nuxt build",
+    "dev": "nuxt dev",
+    "format-check": "npx prettier --check ./",
+    "format-write": "npx prettier --write ./",
+    "generate": "nuxt generate",
+    "postinstall": "npx nuxi clean",
+    "lint": "eslint",
+    "lint-fix": "eslint . --ext .ts,.vue --fix",
+    "preview": "nuxt preview",
+    "sort-package-json": "sort-package-json"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts}": [
+      "npm run lint"
+    ]
+  },
+  "dependencies": {
+    "@acme/eslint-config-custom": "*",
+    "@acme/tailwind-preset": "*"
+  },
+  "devDependencies": {
+    "@nuxt/webpack-builder": "^3.1.2",
+    "@nuxtjs/tailwindcss": "^6.1.3",
+    "nuxt": "^3.1.2"
+  }
+}

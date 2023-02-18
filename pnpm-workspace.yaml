@@ -1,0 +1,6 @@
+packages:
+  - "apps/*"
+  - "bff-mocks/*"
+  - "federated-modules/*"
+  - "packages/*"
+  - "tools/*"
