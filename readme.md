@@ -1,5 +1,9 @@
+
+```
 pnpm i
 pnpm dev
+```
+
 
 open browser http://localhost:3000/
 
